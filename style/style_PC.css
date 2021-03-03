@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* Reset 시작 */
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a         {    text-decoration: none;    }
+a:link    {    color: #333;    }
+a:visited {    color: #333;    }
+a:hover   {    color: #555;    }
+a:active  {    color: #333;    }
+
+ul        {    list-style: none;    }
+/* Reset 끝 */
+
+/* 가이드 라인 시작 */
+div#wrap         {    border: 1px solid #000;    }
+/*header#header    {    border: 1px solid #000;    }*/
+/*div#headerLogo   {    border: 1px solid #f00;    }*/
+/*main#main        {    border: 1px solid #000;    }*/
+aside#aside      {    border: 1px solid #000;    }
+footer#footer    {    border: 1px solid #000;    }
+/* 가이드 라인 끝 */
+
+
+
+/* 공통영역 시작 */
+body {
+    background-image: url(../images/background.png);
+}
+
+div#wrap {
+    width: 1060px;
+    margin: 0 auto;
+
+    background-color: #fff;
+}
+/* 공통영역 끝 */
+
+/* header#header 시작 */
+header#header div#headerLogo {
+    width: 1060px;
+    height: 195px;
+    background-image: url(../images/topbg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    /* nav#gnb 시작 */
+nav#gnb    {
+    height: 39px;
+    line-height: 39px;
+    padding-left: 50px;
+    background-color: #c51a3a;
+}
+#gnb ul#mainMenu>li {
+    display: inline-block;
+}
+#gnb a {
+    color: #b3d1b7;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 6px;
+   /* border: 1px solid #fff;*/
+}
+#gnb a.selected {
+    color: #ff3301;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #fff;
+}
+
+    /* nav#gnb 끝 */
+
+/* header#header 끝 */
+
+
+/* main#main 시작 */
+main#main {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+#main>div#shopImg {
+    width: 440px;
+    /* 이미지 크기 400px + 패딩 20px X 2 */
+    height: 290px;
+    padding: 20px;
+    /*border: 1px solid #f00;*/
+    background-image: url(../images/shop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#main>div#shopIntro {
+    width: 600px;
+    padding: 20px;
+    /*border: 1px solid #000;*/
+}
+#main>#shopIntro>h4 {
+    margin: 20px 0;
+}
+#main>#shopIntro>p {
+    color: #ff3301;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+/* main#main 끝 */
+
+
+
+
+
+
